@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/*GLOBAL RESET*/
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Début du code */
+body {
+  font-family: "Poppins";
+}
+
+header {
+  background: url("../images/header.jpg") center no-repeat;
+  background-size: cover;
+  height: 850px;
+}
+header .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 60%;
+  margin: auto;
+  padding-top: 2%;
+}
+header .menu h1 {
+  font-size: 70px;
+  font-family: "Satisfy";
+  color: #fff;
+}
+header .menu nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .menu nav ul li {
+  margin-left: 15px;
+}
+header .menu nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+header .menu nav ul li a:hover {
+  color: #f7da37;
+}
+header .title {
+  width: 55%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 13%;
+  text-align: center;
+}
+header .title h2 {
+  font-size: 80px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+header .title h2 span {
+  color: #f7da37;
+}
+header .title p {
+  width: 70%;
+  font-size: 18px;
+  margin: 40px auto 90px auto;
+}
+header .title ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header .title ul li {
+  width: 236px;
+  height: 64px;
+  border: 3px solid #fff;
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .title ul li:hover {
+  background: #f7da37;
+  border-color: #f7da37;
+}
+header .title ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+main .about {
+  width: 50%;
+  margin: 80px auto 150px auto;
+  text-align: center;
+}
+main .about h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+main .about p {
+  font-size: 18px;
+  color: grey;
+}
+main .projects {
+  width: 100%;
+  text-align: center;
+}
+main .projects h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 50px 0 20px 0;
+  background: #f2f2f2;
+}
+main .projects p {
+  font-size: 18px;
+  color: grey;
+  padding-bottom: 80px;
+  background: #f2f2f2;
+}
+main .projects div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .projects div img {
+  width: 25%;
+  height: 100%;
+}
+main .services {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+main .services h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+main .services p {
+  font-size: 18px;
+  color: grey;
+  padding-bottom: 80px;
+  text-align: center;
+}
+main .services .services_descriptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .services .services_descriptions div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+}
+main .services .services_descriptions div i {
+  font-size: 30px;
+}
+main .services .services_descriptions div h3 {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 15px auto;
+}
+main .services .services_descriptions .design i, main .services .services_descriptions .design h3 {
+  color: #ff5656;
+}
+main .services .services_descriptions .developpement i, main .services .services_descriptions .developpement h3 {
+  color: #f7da37;
+}
+main .services .services_descriptions .seo i, main .services .services_descriptions .seo h3 {
+  color: #641464;
+}
+
+.news {
+  width: 100%;
+  background: #0a5a68;
+  padding: 80px 0;
+}
+.news .container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.news .container h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.news .container p {
+  font-size: 18px;
+  color: grey;
+  padding-bottom: 60px;
+}
+.news .container .see_blog {
+  margin-bottom: 50px;
+}
+.news .container .see_blog a {
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  background: #f7da37;
+  padding: 10px 40px;
+  font-size: 18px;
+}
+.news .container .see_blog a i {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  color: #f7da37;
+  background: #fff;
+  border-radius: 15px;
+  padding: 2px;
+}
+.news .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.news .container .cards .card {
+  text-align: left;
+  width: 32%;
+  padding-bottom: 80px;
+  background: #fff;
+}
+.news .container .cards .card img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.news .container .cards .card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.news .container .cards .card p {
+  padding: 0 10px 40px 10px;
+}
+.news .container .cards .card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-decoration: none;
+  background: transparent;
+  color: #f7da37;
+}
+.news .container .cards .card a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 30px;
+  background: #f7da37;
+}
+
+footer {
+  width: 100%;
+  background: #292929;
+}
+footer .container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+footer .container .links {
+  display: flex;
+  padding: 40px 0;
+  color: #fff;
+}
+footer .container .links .link {
+  margin-right: 80px;
+}
+footer .container .links .link h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer .container .links .link li {
+  margin-bottom: 15px;
+}
+footer .container .links .link li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+}
+footer .copyright {
+  background: #1e1e1e;
+}
+footer .copyright p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 25px 0;
+}
+footer .copyright p span {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 820px) {
+  header .menu {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .menu h1 {
+    margin-bottom: 20px;
+  }
+  header .menu h2 {
+    width: 100%;
+  }
+  header .title {
+    width: 100%;
+  }
+  header .title p {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  section.about, section.services, section.news {
+    width: auto;
+  }
+
+  main .about {
+    padding: 0 15px;
+  }
+  main .services {
+    padding: 0 15px;
+  }
+  main .news .container {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  footer .container {
+    width: auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  header .title h2 {
+    width: 100%;
+    font-size: 45px;
+  }
+  header .title ul li {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  main .projects div img {
+    width: 49%;
+  }
+  main .services .services_descriptions {
+    flex-direction: column;
+  }
+  main .services .services_descriptions div {
+    width: auto;
+  }
+  main .news .container .cards {
+    flex-direction: column;
+  }
+  main .news .container .cards .card {
+    width: auto;
+    margin-bottom: 15px;
+  }
+
+  footer .container .links {
+    flex-direction: column;
+  }
+  footer .container .links .link {
+    margin-bottom: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

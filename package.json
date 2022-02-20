@@ -1,0 +1,10 @@
+{
+  "name": "illdy-sass-1-master",
+  "version": "1.0.0",
+  "description": "Maquette à intégrer en utilisant SASS # Objectifs",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./scss/style.scss:./css/style.css"},
+  "author": "",
+  "license": "ISC"
+}
